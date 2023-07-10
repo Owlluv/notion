@@ -25,34 +25,35 @@
             max-width: 95%;
             margin: auto;
             border: 1px solid #EBEBEB;
-            border-radius: 1px;
+            border-radius: 3px;
             box-shadow: 0px 0px 0px 0px #EBEBEB;
 
         }
 
            
         .greet{
-            font-size: 3em;
+            font-size: 14px;
+            font-weight: bold;
         }
 
         .date {
       
             font-family: lyon-text;
-            font-size: 2em;
+            font-size: 14px;
         }
 
         .clock {
             font-family: lyon-text;
-            font-size: 2em;
+            font-size: 14px;
         }
 
         .time {
             display: inline-block;
-            min-width: 20px;
+            min-width: 14px;
         }
 
         .colon {
-            font-size: 1em;
+            font-size: 14px;
             display: inline-block;
         }
 
@@ -97,11 +98,11 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
-            greet = 'Good Morning  '+name;
+            greet = 'GOOD MORNING  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Good Afternoon '+name;
+            greet = 'GOOD AFTERNOON '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Good Evening  '+name;
+            greet = 'GOOD EVENING  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
